@@ -1,0 +1,21 @@
+{
+  "name": "oak-price-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "init": "babel-node src/init.js",
+    "update": "babel-node src/update.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.22.20",
+    "@babel/node": "^7.22.19",
+    "@babel/preset-env": "^7.22.20"
+  },
+  "dependencies": {
+    "@polkadot/api": "^10.9.1"
+  }
+}
