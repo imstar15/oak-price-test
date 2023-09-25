@@ -11,7 +11,8 @@ const main = async () => {
 	keyringPair.meta.name = 'Alice';
 
 	const extrinsic = api.tx.automationPrice.initializeAsset('shibuya', 'arthswap', 'WRSTR', 'USDT', '18', [keyringPair.addressRaw]);
-	await sendExtrinsic(api, extrinsic, keyringPair, { isSudo: true });
+	// await sendExtrinsic(api, extrinsic, keyringPair, { isSudo: true });
+	await sendExtrinsic(api, extrinsic, keyringPair);
 }
 
 main().catch(console.error).finally(() => {
